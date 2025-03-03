@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anantha Subash - HackZillaX8</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Fonts Stuff -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href="#"><img src="resources/close.svg" alt="menu-close" height="26px" width="26px"></a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="hire-me"href="'mailto:[ananthasubas2004@gmail.com]?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you\'re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.'">Hire Me</a></li>
+                <li><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a></li>
+            </ul>
+            <ul>
+                <li><a href="#home">CYBER BASH FORCE</a></li>
+                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#articles">Articles</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="hideOnMobile"><a class="hire-me"href="'mailto:[ananthasubas2004@gmail.com]?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you\'re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.'">Hire Me</a></li>
+                <li class="hideOnMobile"><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a></li>
+                <li class="menu-button" onclick=showSideBar()><a href="#"><img src="resources/menu.svg" alt="menu" height="26px" width="26px" ></a></li>
+            </ul>
+        </nav>
+        <section id="home" class="home">
+            <div>
+                <img src="profile-edit.jpg" alt="Anantha Subash Pic">
+            </div>
+            <div class="home-intro">
+                <h2 class="intro">Hi! I am Anantha Subash.</h2>
+                <h2 class="nick-head">(aka <a class="nick" href="https://github.com/CyberBashForce" target="_blank">CyberBashForce</a>)</h2>
+                <h2>I am a <span class="role"></span></h2>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed= new Typed(".role",{
+                    strings : ["Developer", "Cybersecurity Researcher", "3D Modeler","Engineer"],
+                    typeSpeed: 120,
+                    backSpeed:50,
+                    loop: true
+                })
+                </script>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skill-list">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Software Developer</li>
+                    <li>Web App Testing</li>
+                    <li>Networking</li>
+                    <li>Mechanical Design</li>
+                    <li>3D Modelling</li>
+                    <li>Internet Of Things</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="resources/cpp.svg" alt="C++">
+                <img src="resources/c.svg" alt="C">
+                <img src="resources/opengl.png" alt="opengl">
+                <img src="resources/py.svg" alt="Python">
+                <img src="resources/html.svg" alt="Html">
+                <img src="resources/css.svg" alt="Css">
+                <img src="resources/js.svg" alt="Javascript">
+                <img src="resources/bash.svg" alt="Bash">
+                <img src="resources/kali-linux.svg" alt="Kali">
+                <img src="resources/arch-linux.svg" alt="Arch">
+                <img src="resources/nmap.svg" alt="nmap">
+                <img src="resources/solidworks.svg" alt="sw">
+                <img src="resources/blender.svg" alt="blender">
+                <img src="resources/raspberry-pi.svg" alt="rpi">
+                <img src="resources/arduino.svg" alt="arduino">
+                <img src="resources/ap.png" alt="Ardupilot">
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="slides">
+                <div class="slide-1 slide-item slide-active">
+                    <img src="Blue_print - Copy.png">
+                    <div class="slide-content">
+                        <h1>Asunama MK I</h1>
+                        <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of various discipline collaborated to design and fabricate an UAV capable of delivering 250g of medical supplies to 5km radius. The system has precision landing generalized to land on 
+                            H-Pads ...</p>
+                        <a class="read" href="https://github.com/CyberBashForce/ASUNAMA-2024-UAV" target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="slide-2 slide-item">
+                    <img src="GripXel.png">
+                    <div class="slide-content">
+                        <h1>GripXel</h1>
+                        <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of various discipline collaborated to design and fabricate an UAV capable of delivering 250g of medical supplies to 5km radius. The system has precision landing generalized to land on 
+                            H-Pads ...</p>
+                        <a class="read" href="https://github.com/CyberBashForce/GripXel-MK-1" target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="slide-3 slide-item">
+                    <img src="GripXel.png">
+                    <div class="slide-content">
+                        <h1>Network Mapper</h1>
+                        <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of various discipline collaborated to design and fabricate an UAV capable of delivering 250g of medical supplies to 5km radius. The system has precision landing generalized to land on 
+                            H-Pads ...</p>
+                        <a class="read" href="https://github.com/CyberBashForce/Networking-Tools" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function showSideBar(){
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+            function hideSideBar(){
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none";
+            }
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>
