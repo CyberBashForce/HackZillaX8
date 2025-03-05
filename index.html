@@ -1,133 +1,256 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anantha Subash - HackZillaX8</title>
-        <link rel="stylesheet" href="styles.css">
 
-        <!-- Fonts Stuff -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anantha Subash - HackZillaX8</title>
+    <link rel="stylesheet" href="styles.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul class="sidebar">
-                <li onclick=hideSideBar()><a href="#"><img src="resources/close.svg" alt="menu-close" height="26px" width="26px"></a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a class="hire-me"href="'mailto:[ananthasubas2004@gmail.com]?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you\'re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.'">Hire Me</a></li>
-                <li><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a></li>
-            </ul>
-            <ul>
-                <li><a href="#home">CYBER BASH FORCE</a></li>
-                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
-                <li class="hideOnMobile"><a href="#articles">Articles</a></li>
-                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-                <li class="hideOnMobile"><a class="hire-me"href="'mailto:[ananthasubas2004@gmail.com]?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you\'re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.'">Hire Me</a></li>
-                <li class="hideOnMobile"><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a></li>
-                <li class="menu-button" onclick=showSideBar()><a href="#"><img src="resources/menu.svg" alt="menu" height="26px" width="26px" ></a></li>
-            </ul>
-        </nav>
-        <section id="home" class="home">
-            <div>
-                <img src="profile-edit.jpg" alt="Anantha Subash Pic">
-            </div>
-            <div class="home-intro">
-                <h2 class="intro">Hi! I am Anantha Subash.</h2>
-                <h2 class="nick-head">(aka <a class="nick" href="https://github.com/CyberBashForce" target="_blank">CyberBashForce</a>)</h2>
-                <h2>I am a <span class="role"></span></h2>
-                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-                <script>
-                    var typed= new Typed(".role",{
-                    strings : ["Developer", "Cybersecurity Researcher", "3D Modeler","Engineer"],
+    <!-- Fonts Stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a><img src="resources/close.svg" alt="menu-close" height="26px" width="26px"></a>
+            </li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a class="hire-me"
+                    href="mailto:ananthasubas2004@gmail.com?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you%27re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.">Hire</a>
+                Me</a>
+            </li>
+            <li><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a></li>
+        </ul>
+        <ul>
+            <li><a href="#home">CYBER BASH FORCE</a></li>
+            <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#articles">Articles</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="hideOnMobile"><a class="hire-me"
+                    href="mailto:ananthasubas2004@gmail.com?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you\'re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.">Hire
+                    Me</a></li>
+            <li class="hideOnMobile"><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a>
+            </li>
+            <li class="menu-button" onclick=showSideBar()><a href="#"><img src="resources/menu.svg" alt="menu"
+                        height="26px" width="26px"></a></li>
+        </ul>
+    </nav>
+    <section id="home" class="home">
+        <div>
+            <img src="profile-edit.jpg" alt="Anantha Subash Pic">
+        </div>
+        <div class="home-intro">
+            <h2 class="intro">Hi! I am Anantha Subash.</h2>
+            <h2 class="nick-head">(aka <a class="nick" href="https://github.com/CyberBashForce"
+                    target="_blank">CyberBashForce</a>)</h2>
+            <h2>I am a <span class="role"></span></h2>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed(".role", {
+                    strings: ["Developer", "Cybersecurity Researcher", "3D Modeler", "Engineer"],
                     typeSpeed: 120,
-                    backSpeed:50,
+                    backSpeed: 50,
                     loop: true
                 })
-                </script>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <div class="skill-list">
-                <h1>Skills</h1>
-                <ul>
-                    <li>Software Developer</li>
-                    <li>Web App Testing</li>
-                    <li>Networking</li>
-                    <li>Mechanical Design</li>
-                    <li>3D Modelling</li>
-                    <li>Internet Of Things</li>
-                </ul>
-            </div>
-            <div class="logo">
-                <img src="resources/cpp.svg" alt="C++">
-                <img src="resources/c.svg" alt="C">
-                <img src="resources/opengl.png" alt="opengl">
-                <img src="resources/py.svg" alt="Python">
-                <img src="resources/html.svg" alt="Html">
-                <img src="resources/css.svg" alt="Css">
-                <img src="resources/js.svg" alt="Javascript">
-                <img src="resources/bash.svg" alt="Bash">
-                <img src="resources/kali-linux.svg" alt="Kali">
-                <img src="resources/arch-linux.svg" alt="Arch">
-                <img src="resources/nmap.svg" alt="nmap">
-                <img src="resources/solidworks.svg" alt="sw">
-                <img src="resources/blender.svg" alt="blender">
-                <img src="resources/raspberry-pi.svg" alt="rpi">
-                <img src="resources/arduino.svg" alt="arduino">
-                <img src="resources/ap.png" alt="Ardupilot">
-            </div>
-        </section>
+            </script>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="skill-list">
+            <h1>Skills</h1>
+            <ul>
+                <li>Software Developer</li>
+                <li>Web App Testing</li>
+                <li>Networking</li>
+                <li>Mechanical Design</li>
+                <li>3D Modelling</li>
+                <li>Internet Of Things</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="resources/cpp.svg" alt="C++">
+            <img src="resources/c.svg" alt="C">
+            <img src="resources/opengl.png" alt="opengl">
+            <img src="resources/py.svg" alt="Python">
+            <img src="resources/html.svg" alt="Html">
+            <img src="resources/css.svg" alt="Css">
+            <img src="resources/js.svg" alt="Javascript">
+            <img src="resources/bash.svg" alt="Bash">
+            <img src="resources/kali-linux.svg" alt="Kali">
+            <img src="resources/arch-linux.svg" alt="Arch">
+            <img src="resources/nmap.svg" alt="nmap">
+            <img src="resources/solidworks.svg" alt="sw">
+            <img src="resources/blender.svg" alt="blender">
+            <img src="resources/raspberry-pi.svg" alt="rpi">
+            <img src="resources/arduino.svg" alt="arduino">
+            <img src="resources/ap.png" alt="Ardupilot">
+        </div>
+    </section>
 
-        <section class="projects" id="projects">
-            <div class="slides">
-                <div class="slide-1 slide-item slide-active">
-                    <img src="Blue_print - Copy.png">
-                    <div class="slide-content">
-                        <h1>Asunama MK I</h1>
-                        <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of various discipline collaborated to design and fabricate an UAV capable of delivering 250g of medical supplies to 5km radius. The system has precision landing generalized to land on 
-                            H-Pads ...</p>
-                        <a class="read" href="https://github.com/CyberBashForce/ASUNAMA-2024-UAV" target="_blank">Read More</a>
-                    </div>
-                </div>
-                <div class="slide-2 slide-item">
-                    <img src="GripXel.png">
-                    <div class="slide-content">
-                        <h1>GripXel</h1>
-                        <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of various discipline collaborated to design and fabricate an UAV capable of delivering 250g of medical supplies to 5km radius. The system has precision landing generalized to land on 
-                            H-Pads ...</p>
-                        <a class="read" href="https://github.com/CyberBashForce/GripXel-MK-1" target="_blank">Read More</a>
-                    </div>
-                </div>
-                <div class="slide-3 slide-item">
-                    <img src="GripXel.png">
-                    <div class="slide-content">
-                        <h1>Network Mapper</h1>
-                        <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of various discipline collaborated to design and fabricate an UAV capable of delivering 250g of medical supplies to 5km radius. The system has precision landing generalized to land on 
-                            H-Pads ...</p>
-                        <a class="read" href="https://github.com/CyberBashForce/Networking-Tools" target="_blank">Read More</a>
-                    </div>
+    <section class="projects" id="projects">
+        <div class="slides">
+            <div class="slide-1 slide-item slide-active">
+                <img src="Blue_print - Copy.png">
+                <div class="slide-content">
+                    <h1>Asunama MK I</h1>
+                    <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of
+                        various discipline collaborated to design and fabricate an UAV capable of delivering 250g of
+                        medical supplies to 5km radius. The system has precision landing generalized to land on
+                        H-Pads ...</p>
+                    <a class="read" href="https://github.com/CyberBashForce/ASUNAMA-2024-UAV" target="_blank">Read
+                        More</a>
                 </div>
             </div>
-        </section>
+            <div class="slide-2 slide-item">
+                <img src="GripXel.png">
+                <div class="slide-content">
+                    <h1>GripXel</h1>
+                    <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of
+                        various discipline collaborated to design and fabricate an UAV capable of delivering 250g of
+                        medical supplies to 5km radius. The system has precision landing generalized to land on
+                        H-Pads ...</p>
+                    <a class="read" href="https://github.com/CyberBashForce/GripXel-MK-1" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="slide-3 slide-item">
+                <img src="GripXel.png">
+                <div class="slide-content">
+                    <h1>Network Mapper</h1>
+                    <p>In the event of Autonomous Drone Development Challenge 2024, myself and my team members of
+                        various discipline collaborated to design and fabricate an UAV capable of delivering 250g of
+                        medical supplies to 5km radius. The system has precision landing generalized to land on
+                        H-Pads ...</p>
+                    <a class="read" href="https://github.com/CyberBashForce/Networking-Tools" target="_blank">Read
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script>
-            function showSideBar(){
-                const sidebar = document.querySelector(".sidebar");
-                sidebar.style.display = "flex";
-            }
-            function hideSideBar(){
-                const sidebar = document.querySelector(".sidebar");
-                sidebar.style.display = "none";
-            }
-        </script>
-        <script src="main.js"></script>
-    </body>
+    <section class="articles" id="articles">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="resources/Blue_print - Copy.png" alt="drone" draggable="false"></div>
+                    <span>CYBER drone works</span>
+                    <h2>Drone</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="resources/GripXel.png" alt="drone" draggable="false"></div>
+                    <span>One Stop post for Data Structures and Algorithms</span>
+                    <h2>Drone</h2>
+
+                </li>
+                <li class="card">
+                    <div class="img"><img src="prof-pic.png" alt="drone" draggable="false"></div>
+                    <span>How drone works</span>
+                    <h2>Drone</h2>
+
+                </li>
+                <li class="card">
+                    <div class="img"><img src="profile-edit.jpg" alt="drone" draggable="false"></div>
+                    <span>How drone works</span>
+                    <h2>Drone</h2>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="resources/Blue_print - Copy.png" alt="drone" draggable="false"></div>
+                    <span>How drone works</span>
+                    <h2>Drone</h2>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="moto-banner">
+            <h1>LET'S TALK!</h1>
+            <div class="social">
+                <a class="social-link" target="_blank" href="mailto:ananthasubas@gmail.com"><img
+                        src="resources/gmail.svg" alt="email"></a>
+                <a class="social-link" target="_blank" href="https://www.linkedin.com/in/anantha-subash/"><img
+                        src="resources/linkedin.svg" alt="linkedin"></a>
+                <a class="social-link" href="https://github.com/CyberBashForce" target="_blank"><img
+                        src="resources/github.svg" alt="github"></a>
+                <a class="social-link" target="_blank" href="https://x.com/CyberBashForce"><img src="resources/x.svg"
+                        alt="x"></a>
+            </div>
+        </div>
+        <div class="info">
+            <form class="form-data"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeKPtg4qcFQhT5HByEsoySYrnZM___2-hLazGx7vKVsgSFi-A/formResponse"
+                method="post" id="contact-form">
+                <label for="name">
+                    Name :
+                    <input type="text" name="entry.594495144" id="name" class="form-input" placeholder="Peter Parker" />
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="entry.863241848" id="email" class="form-input" required
+                        placeholder="pete@horizon.com" />
+                </label>
+                <label for="ph">
+                    Phone:
+                    <input type="tel" name="entry.854672758" id="ph" class="form-input" /></label>
+                <input type="submit" class="submit">
+            </form>
+            <div class="my-info">
+                <p>Bangalore,</p>
+                <p>India - 560066,</p>
+                <p>ananthasubas2004@gmail.com</p>
+                <p>+91 94879 74805</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+        function hideSideBar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission (which causes the redirect)
+
+            const formData = new FormData(this); // Create a FormData object with the form data
+
+            fetch('https://docs.google.com/forms/d/e/1FAIpQLSeKPtg4qcFQhT5HByEsoySYrnZM___2-hLazGx7vKVsgSFi-A/formResponse', {
+                method: 'POST',  // Send a POST request
+                body: formData    // Send the form data in the body of the request
+            })
+
+            // Handle success - You can show a confirmation message or redirect to another page
+            alert('Thank you for your submission!');
+            // Optional: Redirect to a custom thank you page
+            // window.location.href = '/thank-you.html';
+            // Reset the form after successful submission
+            document.getElementById("contact-form").reset();
+
+        });
+    </script>
+
+    <script src="main.js" defer></script>
+</body>
+
 </html>
