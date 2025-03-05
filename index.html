@@ -24,14 +24,14 @@
         <ul class="sidebar">
             <li onclick=hideSideBar()><a><img src="resources/close.svg" alt="menu-close" height="26px" width="26px"></a>
             </li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li onclick="window.location.hash = '#skills'"><a href="#skills">Skills</a></li>
+            <li onclick="window.location.hash = '#projects'"><a href="#projects">Projects</a></li>
+            <li onclick="window.location.hash = '#articles'"><a href="#articles">Articles</a></li>
+            <li onclick="window.location.hash = '#contact'"><a href="#contact">Contact</a></li>
             <li>
                 <a class="hire-me"
-                    href="mailto:ananthasubas2004@gmail.com?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you%27re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.">Hire</a>
-                Me</a>
+                    href="mailto:ananthasubas2004@gmail.com?subject=Exciting%20Opportunity%20at%20[Your%20Company%20Name]&body=Hi%20Subash,%0A%0AWe%E2%80%99ve%20reviewed%20your%20portfolio%20and%20have%20a%20vacancy%20that%20aligns%20with%20your%20skills.%20If%20you%27re%20still%20interested,%20we%E2%80%99d%20love%20to%20discuss%20the%20opportunity%20further.%0A%0AThank%20you.">Hire
+                    Me</a>
             </li>
             <li><a class="cv" href="resources/Anantha Subash Baskar Resume.pdf" download>CV</a></li>
         </ul>
@@ -101,8 +101,8 @@
             <img src="resources/ap.png" alt="Ardupilot">
         </div>
     </section>
-
-    <section class="projects" id="projects">
+    <h1 class="project-title" id="projects">Projects</h1>
+    <section class="projects">
         <div class="slides">
             <div class="slide-1 slide-item slide-active">
                 <img src="Blue_print - Copy.png">
@@ -141,7 +141,7 @@
             </div>
         </div>
     </section>
-
+    <h1 class="article-title">Articles</h1>
     <section class="articles" id="articles">
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"></i>
@@ -231,20 +231,15 @@
     </script>
     <script>
         document.getElementById("contact-form").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the default form submission (which causes the redirect)
+            event.preventDefault();
 
-            const formData = new FormData(this); // Create a FormData object with the form data
+            const formData = new FormData(this);
 
             fetch('https://docs.google.com/forms/d/e/1FAIpQLSeKPtg4qcFQhT5HByEsoySYrnZM___2-hLazGx7vKVsgSFi-A/formResponse', {
-                method: 'POST',  // Send a POST request
-                body: formData    // Send the form data in the body of the request
+                method: 'POST',
+                body: formData
             })
-
-            // Handle success - You can show a confirmation message or redirect to another page
             alert('Thank you for your submission!');
-            // Optional: Redirect to a custom thank you page
-            // window.location.href = '/thank-you.html';
-            // Reset the form after successful submission
             document.getElementById("contact-form").reset();
 
         });

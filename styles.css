@@ -179,6 +179,26 @@ nav li:hover a {
     margin: 5% 8%;
 }
 
+.project-title {
+    padding: 0 5px;
+    background-image: linear-gradient(90deg, #06D001, #3282B8);
+    width: fit-content;
+    border-radius: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5%;
+}
+
+.article-title {
+    padding: 0 5px;
+    background-image: linear-gradient(90deg, #06D001, #3282B8);
+    width: fit-content;
+    border-radius: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5%;
+}
+
 .projects {
     width: auto;
     height: 500px;
@@ -725,6 +745,11 @@ nav li:hover a {
         margin-top: 25%;
     }
 
+    .article-title {
+        margin-top: 50%;
+        margin-bottom: -30%
+    }
+
 }
 
 @media(max-width: 500px) {
@@ -753,6 +778,10 @@ nav li:hover a {
 
     .home-intro h2 {
         padding: 10px 0px;
+    }
+
+    .skills {
+        margin-top: 25%;
     }
 
     .skill-list>ul>li {
@@ -838,6 +867,7 @@ nav li:hover a {
         font-size: 4vw;
         padding: 5% 10%;
         margin-bottom: 10%;
+        border-radius: 50px;
     }
 
     .moto-banner {
@@ -861,6 +891,16 @@ nav li:hover a {
         width: 100px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .article-title {
+        margin-top: 50%;
+        margin-bottom: -50%
+    }
+
+    .project-title {
+        margin-bottom: 10%;
+        margin-top: 30%;
     }
 
 }
