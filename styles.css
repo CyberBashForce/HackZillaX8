@@ -453,7 +453,7 @@ nav li:hover a {
     padding: 80px;
     line-height: 40px;
     border-radius: 100px;
-    width: 40%;
+    width: 30vw;
     box-shadow: 20px 20px 50px #000;
     height: fit-content;
 }
@@ -879,7 +879,7 @@ nav li:hover a {
     }
 
     .form-input {
-        width: 250px;
+        width: 25vw;
     }
 
     .my-info {
@@ -895,12 +895,19 @@ nav li:hover a {
 
     .article-title {
         margin-top: 50%;
-        margin-bottom: -50%
+        margin-bottom: -50%;
+        font-size: 5vw;
     }
 
     .project-title {
         margin-bottom: 10%;
         margin-top: 30%;
+        font-size: 5vw;
+    }
+
+    .social-link {
+        width: 1.5vw;
+        height: 1.5vw;
     }
 
 }
