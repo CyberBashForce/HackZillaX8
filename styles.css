@@ -422,9 +422,9 @@ nav li:hover a {
     width: auto-fit;
     margin-left: auto;
     padding: 0.2rem 1.5rem;
-    color: #0C134F;
-    font-size: 1.25rem;
-    background-image: var(--button-bg);
+    color: #E4F1FF;
+    font-size: 1.15rem;
+    background-image: var(--button-bg-tr);
     margin-top: auto;
     margin-bottom: 2rem;
     margin-right: 2rem;
