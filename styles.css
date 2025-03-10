@@ -232,13 +232,22 @@ nav li:hover a {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.slide-item>img {
+.slide-item>img:not(.cad) {
     width: 450px;
     height: 450px;
     border-radius: 20px;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.slide-item>.cad-link>.cad {
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
 
 .slide-item>.slide-content>h1 {
     background-image: linear-gradient(90deg, #06D001, #3282B8);
@@ -267,6 +276,23 @@ nav li:hover a {
 
 .slide-content>.read>a {
     color: black;
+}
+
+.cad-button {
+    display: inline;
+    position: absolute;
+    right: 2%;
+    margin-top: 2%;
+    padding: 6px 6px;
+    color: #E4F1FF;
+    background-image: var(--button-bg-tr);
+    font-style: bold;
+    border-radius: 1000px;
+    text-decoration: none;
+}
+
+.cad-button:hover {
+    box-shadow: 0px 0px 10px #E4F1FF;
 }
 
 
@@ -507,7 +533,7 @@ nav li:hover a {
     justify-content: space-around;
     text-shadow: 0px 0px 25px #000;
     position: relative;
-    top: -25%;
+    top: -35%;
 }
 
 .my-info {
@@ -696,7 +722,7 @@ nav li:hover a {
         position: relative;
     }
 
-    .slide-item img {
+    .slide-item>img:not(.cad) {
         width: 70vw;
         height: 70vw;
         position: absolute;
@@ -707,7 +733,22 @@ nav li:hover a {
         margin-bottom: 0%;
     }
 
-    .slide-content {
+    .slide-item>.cad-link>.cad {
+        width: 70vw;
+        height: 70vw;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-bottom: 0%;
+    }
+
+    .cad-content {
+        margin-left: -8dvw;
+    }
+
+    .slide-content:not(.cad-content) {
 
         height: 73vw;
         width: 62vw;
@@ -720,6 +761,10 @@ nav li:hover a {
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         padding-left: 8vw;
+    }
+
+    .cad-content {
+        margin-left: -8dvw;
     }
 
     .slide-content h1 {
@@ -828,7 +873,7 @@ nav li:hover a {
         margin-right: 15dvw;
     }
 
-    .slide-item img {
+    .slide-item>img:not(.cad) {
         width: 70vw;
         height: 68dvw;
         border-bottom-left-radius: 0px;
@@ -836,7 +881,15 @@ nav li:hover a {
         margin-bottom: 0%;
     }
 
-    .slide-content {
+    .slide-item>.cad-link>.cad {
+        width: 70vw;
+        height: 68dvw;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-bottom: 0%;
+    }
+
+    .slide-content:not(.cad-content) {
 
         height: 73dvw;
         width: 62vw;
@@ -849,6 +902,12 @@ nav li:hover a {
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         padding-left: 8dvw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cad-content {
+        margin-left: -8 dvw;
     }
 
     .slide-content h1 {

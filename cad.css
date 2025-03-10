@@ -1,0 +1,78 @@
+:root {
+    --button-bg-tr: linear-gradient(90deg, #9201d090, #0798f980);
+    --body-bg: linear-gradient(90deg, #213555, #2D3250, #0C134F);
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-image: var(--body-bg);
+    font-family: "JetBrains Mono", monospace;
+    min-height: 100vh;
+    margin-top: 2%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    margin-top: 3rem;
+    text-align: center;
+    color: #06D001;
+    font-style: bolder;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 35px;
+    overflow: hidden;
+    background-color: #000;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    border-radius: 1000px;
+    border: 2px solid #06D001;
+}
+
+
+
+.canvas-container {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    margin-top: 5vh;
+    top: 0%;
+    left: 0;
+    overflow: hidden;
+}
+
+.group-cad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    cursor: pointer;
+
+}
+
+a {
+    width: fit-content;
+    color: #E4F1FF;
+    background-image: var(--button-bg-tr);
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
